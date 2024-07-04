@@ -1,0 +1,11 @@
+/home/kurumi/env-xs-ov-00-bpu/./rtl/FTB/FTBBank.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/FTB/FTBEntryGen.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/FTB/SRAMTemplate_13.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/FTB/array_3.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/ext_sram.v
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/DelayN_2.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/DelayN_4.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/DelayN_5.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/DelayN_6.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/DelayNWithValid.sv
+/home/kurumi/env-xs-ov-00-bpu/./rtl/common/DelayNWithValid_1.sv
