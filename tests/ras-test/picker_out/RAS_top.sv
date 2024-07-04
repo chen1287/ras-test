@@ -4727,9 +4727,6 @@ module RAS_top;
 
 
 
-initial begin
-    $dumpfile("RAS.fst");
-    $dumpvars(0, RAS_top);
- end 
+
 
 endmodule

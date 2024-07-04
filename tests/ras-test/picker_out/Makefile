@@ -1,15 +1,15 @@
 #Makefile for RAS
 
 export SIMULATOR = verilator
-export TRACE := fst
+export TRACE := OFF
 export PROJECT := RAS
 export TARGET := UT_RAS
-export VERBOSE := ON
+export VERBOSE := OFF
 export EXAMPLE := ON
 export TLANG := python
 export SIMULATOR_FLAGS := 
 export CFLAGS := 
-export COVERAGE := ON
+export COVERAGE := OFF
 
 all: release 
 

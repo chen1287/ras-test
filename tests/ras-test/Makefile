@@ -10,7 +10,7 @@ endif
 
 # if VERBOSE is set, then _VERBOSE is set to -v
 ifneq ($(VERBOSE), false)
-	_VERBOSE := -v
+	_VERBOSE := --verbose
 endif
 _VERBOSE ?=
 _WAVEFORM := -w RAS.fst
@@ -26,5 +26,5 @@ ras:
 
 	@mkdir -p ../../out
 	rm -rf ${TARGET} 
-	picker ${TOP_ENTRY} -f ${TOP_FILES} -l ${TL} -c\
-		 -t ${TARGET} ${_WAVEFORM}  ${_VERBOSE} --internal internals.yaml -e
+	picker export ${TOP_ENTRY} --filelist ${TOP_FILES} --language ${TL} -c\
+		 --target_dir ${TARGET} ${_WAVEFORM}  ${_VERBOSE} --internal internals.yaml -e
