@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fcoroutines -ftls-model=global-dynamic  -shared -Wl,-soname,libUTRAS.so -o libUTRAS.so CMakeFiles/RAS.dir/dut_base.cpp.o  -Wl,-rpath,"\$ORIGIN" -Wl,--whole-archive libDPIRAS.a -Wl,--no-whole-archive -lz 

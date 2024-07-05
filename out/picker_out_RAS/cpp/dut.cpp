@@ -31,11 +31,6 @@ UTRAS::~UTRAS()
 void UTRAS::init()
 {
     /*
-    reg  RAS.redirect_next_bits_r_level
-    reg  RAS.redirect_next_valid_last_r
-    reg  RAS.redirect_next_bits_r_cfiUpdate_pd_isRVC
-    reg  RAS.redirect_next_bits_r_cfiUpdate_pd_isCall
-    reg  RAS.redirect_next_bits_r_cfiUpdate_pd_isRet
     wire  RAS.s3_push
     wire  RAS.s3_pop
     reg  RAS.s3_pushed_in_s2
@@ -424,11 +419,6 @@ void UTRAS::init()
     this->io_redirect_bits_cfiUpdate_TOSR_value.ReInit(5, IOType::Input, "io_redirect_bits_cfiUpdate_TOSR_value");
     this->io_redirect_bits_cfiUpdate_NOS_flag.ReInit(0, IOType::Input, "io_redirect_bits_cfiUpdate_NOS_flag");
     this->io_redirect_bits_cfiUpdate_NOS_value.ReInit(5, IOType::Input, "io_redirect_bits_cfiUpdate_NOS_value");
-    this->RAS_redirect_next_bits_r_level.ReInit(0, IOType::Output, "RAS.redirect_next_bits_r_level");
-    this->RAS_redirect_next_valid_last_r.ReInit(0, IOType::Output, "RAS.redirect_next_valid_last_r");
-    this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC.ReInit(0, IOType::Output, "RAS.redirect_next_bits_r_cfiUpdate_pd_isRVC");
-    this->RAS_redirect_next_bits_r_cfiUpdate_pd_isCall.ReInit(0, IOType::Output, "RAS.redirect_next_bits_r_cfiUpdate_pd_isCall");
-    this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRet.ReInit(0, IOType::Output, "RAS.redirect_next_bits_r_cfiUpdate_pd_isRet");
     this->RAS_s3_push.ReInit(0, IOType::Output, "RAS.s3_push");
     this->RAS_s3_pop.ReInit(0, IOType::Output, "RAS.s3_pop");
     this->RAS_s3_pushed_in_s2.ReInit(0, IOType::Output, "RAS.s3_pushed_in_s2");
@@ -816,11 +806,6 @@ void UTRAS::init()
     this->io_redirect_bits_cfiUpdate_TOSR_value.BindDPIRW((void (*)(void*))get_io_redirect_bits_cfiUpdate_TOSR_value, (void (*)(const void*))set_io_redirect_bits_cfiUpdate_TOSR_value);
     this->io_redirect_bits_cfiUpdate_NOS_flag.BindDPIRW((void (*)(void*))get_io_redirect_bits_cfiUpdate_NOS_flag, (void (*)(const unsigned char))set_io_redirect_bits_cfiUpdate_NOS_flag);
     this->io_redirect_bits_cfiUpdate_NOS_value.BindDPIRW((void (*)(void*))get_io_redirect_bits_cfiUpdate_NOS_value, (void (*)(const void*))set_io_redirect_bits_cfiUpdate_NOS_value);
-    this->RAS_redirect_next_bits_r_level.BindDPIRW((void (*)(void*))get_RAS_redirect_next_bits_r_level, (void (*)(const unsigned char))nullptr);
-    this->RAS_redirect_next_valid_last_r.BindDPIRW((void (*)(void*))get_RAS_redirect_next_valid_last_r, (void (*)(const unsigned char))nullptr);
-    this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC.BindDPIRW((void (*)(void*))get_RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC, (void (*)(const unsigned char))nullptr);
-    this->RAS_redirect_next_bits_r_cfiUpdate_pd_isCall.BindDPIRW((void (*)(void*))get_RAS_redirect_next_bits_r_cfiUpdate_pd_isCall, (void (*)(const unsigned char))nullptr);
-    this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRet.BindDPIRW((void (*)(void*))get_RAS_redirect_next_bits_r_cfiUpdate_pd_isRet, (void (*)(const unsigned char))nullptr);
     this->RAS_s3_push.BindDPIRW((void (*)(void*))get_RAS_s3_push, (void (*)(const unsigned char))nullptr);
     this->RAS_s3_pop.BindDPIRW((void (*)(void*))get_RAS_s3_pop, (void (*)(const unsigned char))nullptr);
     this->RAS_s3_pushed_in_s2.BindDPIRW((void (*)(void*))get_RAS_s3_pushed_in_s2, (void (*)(const unsigned char))nullptr);
@@ -1208,11 +1193,6 @@ void UTRAS::init()
     this->port.Add(this->io_redirect_bits_cfiUpdate_TOSR_value.mName, this->io_redirect_bits_cfiUpdate_TOSR_value);
     this->port.Add(this->io_redirect_bits_cfiUpdate_NOS_flag.mName, this->io_redirect_bits_cfiUpdate_NOS_flag);
     this->port.Add(this->io_redirect_bits_cfiUpdate_NOS_value.mName, this->io_redirect_bits_cfiUpdate_NOS_value);
-    this->port.Add(this->RAS_redirect_next_bits_r_level.mName, this->RAS_redirect_next_bits_r_level);
-    this->port.Add(this->RAS_redirect_next_valid_last_r.mName, this->RAS_redirect_next_valid_last_r);
-    this->port.Add(this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC.mName, this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC);
-    this->port.Add(this->RAS_redirect_next_bits_r_cfiUpdate_pd_isCall.mName, this->RAS_redirect_next_bits_r_cfiUpdate_pd_isCall);
-    this->port.Add(this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRet.mName, this->RAS_redirect_next_bits_r_cfiUpdate_pd_isRet);
     this->port.Add(this->RAS_s3_push.mName, this->RAS_s3_push);
     this->port.Add(this->RAS_s3_pop.mName, this->RAS_s3_pop);
     this->port.Add(this->RAS_s3_pushed_in_s2.mName, this->RAS_s3_pushed_in_s2);

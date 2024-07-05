@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/UT_RAS_dpi.hpp
+svdpi.h
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/svdpi.h
+
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/dut.i
+dut_base.hpp
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/dut_base.hpp
+UT_RAS_dpi.hpp
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/UT_RAS_dpi.hpp
+dut_base.hpp
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/dut_base.hpp
+UT_RAS_dpi.hpp
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/UT_RAS_dpi.hpp
+
+/home/kurumi/ras-test/out/picker_out_RAS/UT_RAS/dut_base.hpp
+bits/stdc++.h
+-
+svdpi.h
+-
+
+/usr/local/share/verilator/include/vltstd/svdpi.h
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
+sys/types.h
+-
+

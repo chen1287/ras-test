@@ -347,11 +347,6 @@ public class UT_RAS {
     public XData io_redirect_bits_cfiUpdate_TOSR_value;
     public XData io_redirect_bits_cfiUpdate_NOS_flag;
     public XData io_redirect_bits_cfiUpdate_NOS_value;
-    public XData RAS_redirect_next_bits_r_level;
-    public XData RAS_redirect_next_valid_last_r;
-    public XData RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC;
-    public XData RAS_redirect_next_bits_r_cfiUpdate_pd_isCall;
-    public XData RAS_redirect_next_bits_r_cfiUpdate_pd_isRet;
     public XData RAS_s3_push;
     public XData RAS_s3_pop;
     public XData RAS_s3_pushed_in_s2;
@@ -742,11 +737,6 @@ public class UT_RAS {
         this.io_redirect_bits_cfiUpdate_TOSR_value = new XData(5, XData.In);
         this.io_redirect_bits_cfiUpdate_NOS_flag = new XData(0, XData.In);
         this.io_redirect_bits_cfiUpdate_NOS_value = new XData(5, XData.In);
-        this.RAS_redirect_next_bits_r_level = new XData(0, XData.Out);
-        this.RAS_redirect_next_valid_last_r = new XData(0, XData.Out);
-        this.RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC = new XData(0, XData.Out);
-        this.RAS_redirect_next_bits_r_cfiUpdate_pd_isCall = new XData(0, XData.Out);
-        this.RAS_redirect_next_bits_r_cfiUpdate_pd_isRet = new XData(0, XData.Out);
         this.RAS_s3_push = new XData(0, XData.Out);
         this.RAS_s3_pop = new XData(0, XData.Out);
         this.RAS_s3_pushed_in_s2 = new XData(0, XData.Out);
@@ -1133,11 +1123,6 @@ public class UT_RAS {
         this.io_redirect_bits_cfiUpdate_TOSR_value.BindDPIRW(libUT_RASConstants.DPIRio_redirect_bits_cfiUpdate_TOSR_value, libUT_RASConstants.DPIWio_redirect_bits_cfiUpdate_TOSR_value);
         this.io_redirect_bits_cfiUpdate_NOS_flag.BindDPIRW(libUT_RASConstants.DPIRio_redirect_bits_cfiUpdate_NOS_flag, libUT_RASConstants.DPIWio_redirect_bits_cfiUpdate_NOS_flag);
         this.io_redirect_bits_cfiUpdate_NOS_value.BindDPIRW(libUT_RASConstants.DPIRio_redirect_bits_cfiUpdate_NOS_value, libUT_RASConstants.DPIWio_redirect_bits_cfiUpdate_NOS_value);
-        this.RAS_redirect_next_bits_r_level.BindDPIRW(libUT_RASConstants.DPIRRAS_redirect_next_bits_r_level, libUT_RASConstants.DPIWRAS_redirect_next_bits_r_level);
-        this.RAS_redirect_next_valid_last_r.BindDPIRW(libUT_RASConstants.DPIRRAS_redirect_next_valid_last_r, libUT_RASConstants.DPIWRAS_redirect_next_valid_last_r);
-        this.RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC.BindDPIRW(libUT_RASConstants.DPIRRAS_redirect_next_bits_r_cfiUpdate_pd_isRVC, libUT_RASConstants.DPIWRAS_redirect_next_bits_r_cfiUpdate_pd_isRVC);
-        this.RAS_redirect_next_bits_r_cfiUpdate_pd_isCall.BindDPIRW(libUT_RASConstants.DPIRRAS_redirect_next_bits_r_cfiUpdate_pd_isCall, libUT_RASConstants.DPIWRAS_redirect_next_bits_r_cfiUpdate_pd_isCall);
-        this.RAS_redirect_next_bits_r_cfiUpdate_pd_isRet.BindDPIRW(libUT_RASConstants.DPIRRAS_redirect_next_bits_r_cfiUpdate_pd_isRet, libUT_RASConstants.DPIWRAS_redirect_next_bits_r_cfiUpdate_pd_isRet);
         this.RAS_s3_push.BindDPIRW(libUT_RASConstants.DPIRRAS_s3_push, libUT_RASConstants.DPIWRAS_s3_push);
         this.RAS_s3_pop.BindDPIRW(libUT_RASConstants.DPIRRAS_s3_pop, libUT_RASConstants.DPIWRAS_s3_pop);
         this.RAS_s3_pushed_in_s2.BindDPIRW(libUT_RASConstants.DPIRRAS_s3_pushed_in_s2, libUT_RASConstants.DPIWRAS_s3_pushed_in_s2);
@@ -1524,11 +1509,6 @@ public class UT_RAS {
         this.port.Add("io_redirect_bits_cfiUpdate_TOSR_value", this.io_redirect_bits_cfiUpdate_TOSR_value);
         this.port.Add("io_redirect_bits_cfiUpdate_NOS_flag", this.io_redirect_bits_cfiUpdate_NOS_flag);
         this.port.Add("io_redirect_bits_cfiUpdate_NOS_value", this.io_redirect_bits_cfiUpdate_NOS_value);
-        this.port.Add("RAS_redirect_next_bits_r_level", this.RAS_redirect_next_bits_r_level);
-        this.port.Add("RAS_redirect_next_valid_last_r", this.RAS_redirect_next_valid_last_r);
-        this.port.Add("RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC", this.RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC);
-        this.port.Add("RAS_redirect_next_bits_r_cfiUpdate_pd_isCall", this.RAS_redirect_next_bits_r_cfiUpdate_pd_isCall);
-        this.port.Add("RAS_redirect_next_bits_r_cfiUpdate_pd_isRet", this.RAS_redirect_next_bits_r_cfiUpdate_pd_isRet);
         this.port.Add("RAS_s3_push", this.RAS_s3_push);
         this.port.Add("RAS_s3_pop", this.RAS_s3_pop);
         this.port.Add("RAS_s3_pushed_in_s2", this.RAS_s3_pushed_in_s2);

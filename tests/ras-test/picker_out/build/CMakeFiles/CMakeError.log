@@ -1,0 +1,72 @@
+Performing C++ SOURCE FILE Test _fbracket_depth_4096 failed with the following output:
+Change Dir: /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ffb55/fast && gmake[1]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ffb55.dir/build.make CMakeFiles/cmTC_ffb55.dir/build
+gmake[2]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ffb55.dir/src.cxx.o
+/usr/bin/c++ -D_fbracket_depth_4096  -fcoroutines -ftls-model=global-dynamic     -fbracket-depth=4096 -std=gnu++20 -o CMakeFiles/cmTC_ffb55.dir/src.cxx.o -c /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-fbracket-depth=4096'
+gmake[2]: *** [CMakeFiles/cmTC_ffb55.dir/build.make:78: CMakeFiles/cmTC_ffb55.dir/src.cxx.o] Error 1
+gmake[2]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_ffb55/fast] Error 2
+gmake[1]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _mno_cet failed with the following output:
+Change Dir: /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8de5d/fast && gmake[1]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_8de5d.dir/build.make CMakeFiles/cmTC_8de5d.dir/build
+gmake[2]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8de5d.dir/src.cxx.o
+/usr/bin/c++ -D_mno_cet  -fcoroutines -ftls-model=global-dynamic     -mno-cet -std=gnu++20 -o CMakeFiles/cmTC_8de5d.dir/src.cxx.o -c /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-mno-cet'; did you mean '-mno-aes'?
+gmake[2]: *** [CMakeFiles/cmTC_8de5d.dir/build.make:78: CMakeFiles/cmTC_8de5d.dir/src.cxx.o] Error 1
+gmake[2]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_8de5d/fast] Error 2
+gmake[1]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _Qunused_arguments failed with the following output:
+Change Dir: /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_91317/fast && gmake[1]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_91317.dir/build.make CMakeFiles/cmTC_91317.dir/build
+gmake[2]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91317.dir/src.cxx.o
+/usr/bin/c++ -D_Qunused_arguments  -fcoroutines -ftls-model=global-dynamic     -Qunused-arguments -std=gnu++20 -o CMakeFiles/cmTC_91317.dir/src.cxx.o -c /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Qunused-arguments'
+gmake[2]: *** [CMakeFiles/cmTC_91317.dir/build.make:78: CMakeFiles/cmTC_91317.dir/src.cxx.o] Error 1
+gmake[2]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_91317/fast] Error 2
+gmake[1]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _mt failed with the following output:
+Change Dir: /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8fc72/fast && gmake[1]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_8fc72.dir/build.make CMakeFiles/cmTC_8fc72.dir/build
+gmake[2]: Entering directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8fc72.dir/src.cxx.o
+/usr/bin/c++ -D_mt  -fcoroutines -ftls-model=global-dynamic   -std=gnu++20 -o CMakeFiles/cmTC_8fc72.dir/src.cxx.o -c /home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8fc72
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fc72.dir/link.txt --verbose=1
+/usr/bin/c++  -fcoroutines -ftls-model=global-dynamic   CMakeFiles/cmTC_8fc72.dir/src.cxx.o -o cmTC_8fc72  -mt 
+c++: error: unrecognized command-line option ‘-mt’; did you mean ‘-MT’?
+gmake[2]: *** [CMakeFiles/cmTC_8fc72.dir/build.make:99: cmTC_8fc72] Error 1
+gmake[2]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_8fc72/fast] Error 2
+gmake[1]: Leaving directory '/home/kurumi/ras-test/tests/ras-test/picker_out/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() {return 0;}
+

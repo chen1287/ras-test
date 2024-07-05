@@ -7,11 +7,6 @@ class UTRAS: public DutUnifiedBase
 {
 public:
     /*
-    reg  RAS.redirect_next_bits_r_level
-    reg  RAS.redirect_next_valid_last_r
-    reg  RAS.redirect_next_bits_r_cfiUpdate_pd_isRVC
-    reg  RAS.redirect_next_bits_r_cfiUpdate_pd_isCall
-    reg  RAS.redirect_next_bits_r_cfiUpdate_pd_isRet
     wire  RAS.s3_push
     wire  RAS.s3_pop
     reg  RAS.s3_pushed_in_s2
@@ -400,11 +395,6 @@ public:
     XData io_redirect_bits_cfiUpdate_TOSR_value;
     XData io_redirect_bits_cfiUpdate_NOS_flag;
     XData io_redirect_bits_cfiUpdate_NOS_value;
-    XData RAS_redirect_next_bits_r_level;
-    XData RAS_redirect_next_valid_last_r;
-    XData RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC;
-    XData RAS_redirect_next_bits_r_cfiUpdate_pd_isCall;
-    XData RAS_redirect_next_bits_r_cfiUpdate_pd_isRet;
     XData RAS_s3_push;
     XData RAS_s3_pop;
     XData RAS_s3_pushed_in_s2;

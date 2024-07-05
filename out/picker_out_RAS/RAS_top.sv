@@ -1197,11 +1197,6 @@ module RAS_top;
   export "DPI-C" function set_io_redirect_bits_cfiUpdate_NOS_flag;
   export "DPI-C" function get_io_redirect_bits_cfiUpdate_NOS_value;
   export "DPI-C" function set_io_redirect_bits_cfiUpdate_NOS_value;
-  export "DPI-C" function get_RAS_redirect_next_bits_r_level;
-  export "DPI-C" function get_RAS_redirect_next_valid_last_r;
-  export "DPI-C" function get_RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC;
-  export "DPI-C" function get_RAS_redirect_next_bits_r_cfiUpdate_pd_isCall;
-  export "DPI-C" function get_RAS_redirect_next_bits_r_cfiUpdate_pd_isRet;
   export "DPI-C" function get_RAS_s3_push;
   export "DPI-C" function get_RAS_s3_pop;
   export "DPI-C" function get_RAS_s3_pushed_in_s2;
@@ -4268,31 +4263,6 @@ module RAS_top;
   function void set_io_redirect_bits_cfiUpdate_NOS_value;
     input logic [4:0] value;
     io_redirect_bits_cfiUpdate_NOS_value=value;
-  endfunction
-
-  function void get_RAS_redirect_next_bits_r_level;
-    output logic  value;
-    value=RAS.redirect_next_bits_r_level;
-  endfunction
-
-  function void get_RAS_redirect_next_valid_last_r;
-    output logic  value;
-    value=RAS.redirect_next_valid_last_r;
-  endfunction
-
-  function void get_RAS_redirect_next_bits_r_cfiUpdate_pd_isRVC;
-    output logic  value;
-    value=RAS.redirect_next_bits_r_cfiUpdate_pd_isRVC;
-  endfunction
-
-  function void get_RAS_redirect_next_bits_r_cfiUpdate_pd_isCall;
-    output logic  value;
-    value=RAS.redirect_next_bits_r_cfiUpdate_pd_isCall;
-  endfunction
-
-  function void get_RAS_redirect_next_bits_r_cfiUpdate_pd_isRet;
-    output logic  value;
-    value=RAS.redirect_next_bits_r_cfiUpdate_pd_isRet;
   endfunction
 
   function void get_RAS_s3_push;

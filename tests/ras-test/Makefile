@@ -27,4 +27,4 @@ ras:
 	@mkdir -p ../../out
 	rm -rf ${TARGET} 
 	picker export ${TOP_ENTRY} --filelist ${TOP_FILES} --language ${TL} -c\
-		 --target_dir ${TARGET} ${_WAVEFORM}  ${_VERBOSE} --internal internals.yaml -e
+		 --target_dir ${TARGET} ${_WAVEFORM}  ${_VERBOSE} --internal internals.yaml -e --autobuild

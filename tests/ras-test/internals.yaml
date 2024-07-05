@@ -1,9 +1,4 @@
 RAS:
-  - "reg redirect_next_bits_r_level"
-  - "reg redirect_next_valid_last_r"
-  - "reg redirect_next_bits_r_cfiUpdate_pd_isRVC"
-  - "reg redirect_next_bits_r_cfiUpdate_pd_isCall"
-  - "reg redirect_next_bits_r_cfiUpdate_pd_isRet"
   - "wire s3_push"
   - "wire s3_pop"
   - "reg s3_pushed_in_s2"
